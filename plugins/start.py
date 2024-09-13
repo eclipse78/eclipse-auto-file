@@ -49,7 +49,7 @@ async def start_command(client: Client, message: Message):
                 print(f"Error decoding ID: {e}")
                 return
 
-        temp_msg = await message.reply("Wait A Sec..")
+        temp_msg = await message.reply("wait a moment...")
         try:
             messages = await get_messages(client, ids)
         except Exception as e:
